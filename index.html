@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Microblog</title>
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar_brand"><img class="navbar_logo" src="static/gallery/logo.svg" alt="Logo" />My Blog</div>
+        <ul class="navbar_navigation">
+            <li class="navbar_navigation_item"><a href="Previous blogs" class="navbar_link">Previous blogs</a> </li>
+            <li class="navbar_navigation_item"><a href="Calender" class="navbar_link">Calender</a></li>
+        </ul>
+    </header>    
+    <main class="main">
+        <section>
+            <h3 class="main_header">Add new entry</h3>
+            <form class="form" method="POST">
+                <p class="form_para">
+                    <label for="entry" class="form_label">Enter title:</label>
+                    <input type="text" name="title" class="form_textarea" id="entry_title">
+                    <label for="entry" class="form_label">Enter content:</label>
+                    <textarea name="content" id="entry" class="form_textarea"></textarea>
+                </p>
+                <button type="submit" class="form_submit">Submit</button>    
+            </form>
+        </section>
+        <section>
+            <h3 class="recent">Recent posts</h3>
+           
+            <article class="entry">
+                <div class="division">
+                    <h4 class="subject">Test</h4>       
+                     <time class="date" datetime="14-12-2022">*25.01.2023</time>
+                </div>
+                <p class="content">Hello</p>
+            </article>
+           
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_div">
+            <section class="left">
+                <a href="about_me.html" class="footer_item">About me</a>
+                <a  href="b" class="footer_item">Check out my other Websites</a>
+            </section>
+            <section class="right">
+                <div class="footer_column" >
+                    <a  href="index.html" class="footer_item">Blog</a>
+                    <a href="my_biodata.html" class="footer_item">Biodata</a>
+                </div>
+                <div class="footer_column" >
+                    <a href="e" class="footer_item">Calender</a>
+                    <a href="f" class="footer_item">Recent</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+   
+</body>
+</html>
