@@ -1,0 +1,67 @@
+html{       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{   box-sizing: border-box;     background-color: aliceblue;            margin: 0;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+.navbar {
+    max-width: 640px;    background-color: azure;    color: rgb(64, 180, 180);
+    font-size: large;    font-weight: 200;    margin: 5px auto;    padding: auto 10px;
+    display: flex;    flex-direction: row;    justify-content: space-between; 
+}
+.imgage{   border: 2px solid #555;
+    }
+.navbar_id{        padding-right: 120px;
+}
+.navbar_navigation_item_name{    display: flex;    
+    font-size: xx-large 
+}
+.navbar_navigation_item{         display: flex;   
+}
+.content{  max-width: 640px;    margin: 5px auto;     background-color: azure;   
+     color: rgb(64, 180, 180);     padding: 0px 10px 10px 10px;
+}
+.content1{ display: flex;   justify-content: space-between;     padding: 0px 10px;    }
+
+.office{        display: inline-block;       justify-content: center;     padding: 0px 1px;}
+
+.skill_set{     padding-left: 15px;      }
+
+.work_item{ font-size: small;       width:100%;    margin:5px;  padding: 1.5px auto;}
+
+.education{     font-size: small;   margin:5px auto;    padding: auto 10px;   }
+
+.row{       margin: 5px;    }
+
+.footer{
+    background-color:     rgb(64, 180, 180);    color: white    ;          max-width: 640px;
+    font-size: smaller;     padding: 5px 10px;    font-weight: bold;       margin: 5px auto;
+}
+.footer_div{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between 
+}
+.left{
+    display: flex;    flex-direction: column;       
+}
+.right {
+display: flex;          flex-direction: row;     
+   }
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+}
+.footer_item{
+    color: inherit;     text-decoration: none;      margin: 5px;
+    }
+    .footer_item:hover{
+     color: aquamarine;  
+     text-decoration:underline; 
+    }
+
+
+

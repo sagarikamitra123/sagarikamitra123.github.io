@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Microblog</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar_brand"><img class="navbar_logo" src="../static/css/gallery/logo.svg" alt="Logo" />My Blog</div>
+        <ul class="navbar_navigation">
+            <li class="navbar_navigation_item"><a href="my_biodata.html" class="navbar_link">Biodata</a></li>
+            <li class="navbar_navigation_item"><a href="index.html" class="navbar_link">About me</a></li>
+        </ul>
+    </header>    
+    <main class="main">
+        <section>
+            <h3 class="main_header">Add new entry</h3>
+            <form class="form" method="POST">
+                <p class="form_para">
+                    <label for="entry" class="form_label">Enter title:</label>
+                    <input type="text" name="title" class="form_textarea" id="entry_title">
+                    <label for="entry" class="form_label">Enter content:</label>
+                    <textarea name="content" id="entry" class="form_textarea"></textarea>
+                </p>
+                <button type="submit" class="form_submit">Submit</button>    
+            </form>
+        </section>
+        <section>
+            <h3 class="recent">Recent posts</h3>
+            {% for entry in entries %}
+            <article class="entry">
+                <div class="division">
+                    <h4 class="subject">{{entry[0]}}</h4>       
+                     <time class="date" datetime="14-12-2022">*{{ entry[2] }}</time>
+                </div>
+                <p class="content">{{ entry[1] }}</p>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_div">
+            <section class="left">
+                <a href="index.html" class="footer_item">About me</a>
+                <a  href="index2.html" class="footer_item">Habit Tracker</a>
+            </section>
+            <section class="right">
+                <div class="footer_column" >
+                    <a  href="index1.html" class="footer_item">BlogPost</a>
+                    <a href="my_biodata.html" class="footer_item">Biodata</a>
+                </div>
+                <div class="footer_column" >
+                    <a href="e" class="footer_item">Calender</a>
+                    <a href="contact.html" class="footer_item">Contact</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
