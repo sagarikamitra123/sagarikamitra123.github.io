@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/css/habitstyle.css" />
+</head>
+
+<body>
+  <header class="header"><p>Habits</p>    
+    <a href="dohabit.html" class="link">Habit Marker</a>
+    <a href="index2.html" class="link">Habit Tracker</a>
+</header>
+
+  <main class="main"><form class="form" method="POST">
+    <textarea class="habit_entry" id="habit" name="habit" rows="3" placeholder="Add new daily habit"></textarea>
+    <button class="form_submit" type="submit">Add</button>
+</form>
+<section class="habit_section">
+    <h4 class="recent_habits">Habit list and date of adding each habit:lets see</h4>
+    {% for habit in habits %}
+    <p class="habit" id="habit" name="habit">{{ habit[0] }}
+        <time class="entry_date" datetime="14-12-2022"> added on *{{habit[1]}}</time> </p>
+{% endfor %}
+    </section>
+</main>
+  
+  <footer class="footer">
+    <div class="footer_div">
+        <section class="left">
+            <a href="index.html" class="footer_item">About me</a>
+            <a  href="index2.html" class="footer_item">Habit Tracker</a>
+        </section>
+        <section class="right">
+            <div class="footer_column" >
+                <a  href="index1.html" class="footer_item">Blog</a>
+                <a href="index1.html" class="footer_item">Biodata</a>
+            </div>
+            <div class="footer_column" >
+                <a href="e" class="footer_item">Calender</a>
+                <a href="contact.html" class="footer_item">Contact</a>
+            </div>
+        </section>
+    </div>
+</footer>
+  
+</body>
+</html>
+

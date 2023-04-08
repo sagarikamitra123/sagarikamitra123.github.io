@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/css/habitstyle.css" />
+</head>
+
+<body>
+  <header class="header"><p>Habits</p>
+    <a href="index2.html" class="link">Habit Marker</a>
+    <a href="add.html" class="link">Add Habit</a> 
+</header>
+
+  <main class="main"> <section class="habit_section">
+    <h3 class="recent">Habits completed list</h3>
+    {% for key,value in habitdone %}
+        <p class="habit" id="habit" name="habit">On {{ value }} habits completed are 
+        {% for x in key %} <ul>{{x}}</ul> </p>
+    {% endfor %}
+    {% endfor %}
+</section>
+</main>
+  
+  <footer class="footer">
+    <div class="footer_div">
+        <section class="left">
+            <a href="index.html" class="footer_item">About me</a>
+            <a  href="index2.html" class="footer_item">Habit Tracker</a>
+        </section>
+        <section class="right">
+            <div class="footer_column" >
+                <a  href="index1.html" class="footer_item">Blog</a>
+                <a href="index1.html" class="footer_item">Biodata</a>
+            </div>
+            <div class="footer_column" >
+                <a href="e" class="footer_item">Calender</a>
+                <a href="contact.html" class="footer_item">Contact</a>
+            </div>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
